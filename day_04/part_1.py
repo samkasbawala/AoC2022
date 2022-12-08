@@ -18,8 +18,8 @@ INPUT_SAMPLE = """\
 EXPECTED = 2
 
 
-def solve(input: str) -> int:
-    assignments = [assignment for assignment in input.splitlines()]
+def solve(input_long: str) -> int:
+    assignments = [assignment for assignment in input_long.splitlines()]
 
     total = 0
     for assignment in assignments:

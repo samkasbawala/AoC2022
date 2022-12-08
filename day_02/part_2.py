@@ -16,8 +16,8 @@ C Z
 EXPECTED = 12
 
 
-def solve(input: str) -> int:
-    games: List[str] = [game for game in input.split("\n") if len(game) > 0]
+def solve(input_long: str) -> int:
+    games: List[str] = [game for game in input_long.split("\n") if len(game) > 0]
 
     win = {"A": "Y", "B": "Z", "C": "X"}
     lose = {"A": "Z", "B": "X", "C": "Y"}

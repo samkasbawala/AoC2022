@@ -27,8 +27,8 @@ INPUT_SAMPLE = """\
 EXPECTED = 45000
 
 
-def solve(input: str) -> int:
-    elves: List[str] = [elf for elf in input.split("\n\n")]
+def solve(input_long: str) -> int:
+    elves: List[str] = [elf for elf in input_long.split("\n\n")]
     cals: List[int] = [sum(int(cal) for cal in elf.splitlines()) for elf in elves]
 
     return sum(sorted(cals, reverse=True)[:3])

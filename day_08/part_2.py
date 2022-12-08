@@ -14,7 +14,7 @@ INPUT_SAMPLE = """\
 35390
 """
 
-EXPECTED = 21
+EXPECTED = 8
 
 
 def solve(input_long: str) -> int:

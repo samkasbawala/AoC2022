@@ -23,8 +23,8 @@ move 1 from 1 to 2
 EXPECTED = "CMZ"
 
 
-def solve(input: str) -> str:
-    first, procedure = [parts for parts in input.split("\n\n")]
+def solve(input_long: str) -> str:
+    first, procedure = [parts for parts in input_long.split("\n\n")]
     layers = first.splitlines()
 
     # Create a stack (ds) for each stack in the problem

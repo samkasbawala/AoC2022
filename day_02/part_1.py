@@ -16,8 +16,8 @@ C Z
 EXPECTED = 15
 
 
-def solve(input: str) -> int:
-    games: List[str] = [game for game in input.split("\n") if len(game) > 0]
+def solve(input_long: str) -> int:
+    games: List[str] = [game for game in input_long.split("\n") if len(game) > 0]
 
     win = {"A": "Y", "B": "Z", "C": "X"}
     pts = {"X": 1, "Y": 2, "Z": 3}

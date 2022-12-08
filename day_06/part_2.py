@@ -12,8 +12,8 @@ mjqjpqmgbljsphdztnvjfqwrcgsmlb
 EXPECTED = 19
 
 
-def solve(input: str) -> int:
-    message = input.strip()
+def solve(input_long: str) -> int:
+    message = input_long.strip()
 
     for idx in range(0, len(message) - 14):
         sub_set = set(message[idx : idx + 14])

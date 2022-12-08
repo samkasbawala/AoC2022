@@ -18,8 +18,8 @@ CrZsJsPPZsGzwwsLwLmpwMDw
 EXPECTED = 70
 
 
-def solve(input: str) -> int:
-    rucksacks = [rucksack for rucksack in input.splitlines()]
+def solve(input_long: str) -> int:
+    rucksacks = [rucksack for rucksack in input_long.splitlines()]
     priorities_lower_case = {
         chr(num): num - ord("a") + 1 for num in range(ord("a"), ord("z") + 1)
     }

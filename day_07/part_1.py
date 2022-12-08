@@ -44,8 +44,8 @@ class Node:
         self.size: int = 0
 
 
-def solve(input: str) -> int:
-    outputs = [output.strip() for output in input.split("\n$")]
+def solve(input_long: str) -> int:
+    outputs = [output.strip() for output in input_long.split("\n$")]
 
     root = Node("/")
     current_folder = root
